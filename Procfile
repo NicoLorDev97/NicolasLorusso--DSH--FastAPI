@@ -1,1 +1,0 @@
-worker: uvicorn main.py
