@@ -2,7 +2,18 @@ import pandas as pd
 import numpy as np
 import pymysql
 from sqlalchemy import create_engine
+from Configuracion import password
 
+
+################# CREANDO DATABASE
+conexion = pymysql.connect(host="localhost",
+                           user = "root",
+                           password=password
+                           )
+
+cursor = conexion.cursor()
+
+cursor.execute("CREATE DATABASE proyectoindividual;")
 
 ##################LEYENDO DATASETS
 
