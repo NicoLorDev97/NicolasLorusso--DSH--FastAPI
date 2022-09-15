@@ -23,8 +23,6 @@ dfCircuits = pd.read_csv("./Datasets/circuits.csv")
 dfRaces = pd.read_csv("./Datasets/races.csv")
 dfResults = pd.read_json("./Datasets/results.json",lines=True)
 
-### Convertir a JSON para la api
-
 
 #######################RENOMBRANDO COLUMNAS
 dfDrivers = dfDrivers.rename(columns={"driverId":"DriverId", "driverRef" : "DriverRef", "number" : "Number", "code":"Code",
